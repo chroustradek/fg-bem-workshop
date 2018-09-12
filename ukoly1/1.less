@@ -1,0 +1,29 @@
+// opravte, pokud naleznete nedostatky.
+@primaryColor: #fff;
+@secondaryColor: #0A0A0A;
+
+.article {
+  background: @primaryColor;
+  color: @secondaryColor;
+
+  &.article--color-inverse {
+    background: @secondaryColor;
+    color: @primaryColor;
+  }
+}
+
+.article__body-wrapper {
+  padding: 10px;
+
+  &.article__body-wrapper--highlighted {
+    border: 2px solid @secondaryColor;
+  }
+}
+
+.article--dark {
+  .article__body-wrapper--highlighted {
+    border: 2px solid @primaryColor;
+  }
+}
+
+
