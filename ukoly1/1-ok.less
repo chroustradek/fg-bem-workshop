@@ -1,0 +1,27 @@
+@article__primary-color: #fff;
+@article__secondary-color: #0A0A0A;
+
+.article {
+  background: @article__primary-color;
+  color: @article__secondary-color;
+}
+
+.article--color-inverse {
+  background: @article__secondary-color;
+  color: @article__primary-color;
+}
+
+.article__body-wrapper {
+  padding: 10px;
+}
+.article__body-wrapper--highlighted {
+  border: 2px solid @article__secondary-color;
+}
+
+.article--dark {
+  .article__body-wrapper--highlighted {
+    border: 2px solid @article__primary-color;
+  }
+}
+
+
